@@ -8,3 +8,11 @@ titlemew[0].style.color = "green";
 console.log(titlemew);
 
 headerTitle.style.borderBottom = "solid 3px #000";
+
+var items = document.getElementsByClassName("list-group-item");
+items[0].style.fontWeight = "bold";
+items[1].style.fontWeight = "bold";
+items[2].style.fontWeight = "bold";
+items[3].style.fontWeight = "bold";
+
+items[2].style.backgroundColor = "green";
