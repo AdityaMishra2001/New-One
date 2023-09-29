@@ -9,10 +9,23 @@ console.log(titlemew);
 
 headerTitle.style.borderBottom = "solid 3px #000";
 
-var items = document.getElementsByClassName("list-group-item");
-items[0].style.fontWeight = "bold";
-items[1].style.fontWeight = "bold";
-items[2].style.fontWeight = "bold";
-items[3].style.fontWeight = "bold";
+// var items = document.getElementsByClassName("list-group-item");
+// items[0].style.fontWeight = "bold";
+// items[1].style.fontWeight = "bold";
+// items[2].style.fontWeight = "bold";
+// items[3].style.fontWeight = "bold";
 
-items[2].style.backgroundColor = "green";
+// items[2].style.backgroundColor = "green";
+
+//get elements by tag name
+var li = document.getElementsByTagName("li");
+li[0].style.fontWeight = "bold";
+li[1].style.fontWeight = "bold";
+li[2].style.fontWeight = "bold";
+li[3].style.fontWeight = "bold";
+
+//li[2].style.backgroundColor = "green";
+
+for (var i = 0; i < li.length; i++) {
+  li[i].style.backgroundColor = "#f4f4f4";
+}
