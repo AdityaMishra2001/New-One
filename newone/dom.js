@@ -19,6 +19,9 @@ headerTitle.style.borderBottom = "solid 3px #000";
 
 //get elements by tag name
 var li = document.getElementsByTagName("li");
+
+console.log(li);
+
 li[0].style.fontWeight = "bold";
 li[1].style.fontWeight = "bold";
 li[2].style.fontWeight = "bold";
@@ -29,3 +32,9 @@ li[3].style.fontWeight = "bold";
 for (var i = 0; i < li.length; i++) {
   li[i].style.backgroundColor = "#f4f4f4";
 }
+
+var item = document.querySelector(".list-group-item:nth-child(2)");
+item.style.backgroundColor = "green";
+
+var nextitem = document.querySelector(".list-group-item:nth-child(3)");
+nextitem.style.visibility = "hidden";
