@@ -29,12 +29,19 @@ li[3].style.fontWeight = "bold";
 
 //li[2].style.backgroundColor = "green";
 
-for (var i = 0; i < li.length; i++) {
-  li[i].style.backgroundColor = "#f4f4f4";
+// for (var i = 0; i < li.length; i++) {
+//   li[i].style.backgroundColor = "#f4f4f4";
+// }
+
+// var item = document.querySelector(".list-group-item:nth-child(2)");
+// item.style.backgroundColor = "green";
+
+// var nextitem = document.querySelector(".list-group-item:nth-child(3)");
+// nextitem.style.visibility = "hidden";
+
+var item = document.querySelectorAll("li:nth-child(odd)");
+//item.style.backgroundColor = "green";
+
+for (var i = 0; i < item.length; i++) {
+  item[i].style.backgroundColor = "green";
 }
-
-var item = document.querySelector(".list-group-item:nth-child(2)");
-item.style.backgroundColor = "green";
-
-var nextitem = document.querySelector(".list-group-item:nth-child(3)");
-nextitem.style.visibility = "hidden";
