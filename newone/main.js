@@ -21,6 +21,9 @@ function addItem(e) {
   var detail = document.getElementById("description").value;
   var final = newItem + " " + detail;
 
+  //storing input to local storage
+  localStorage.setItem("item input", final);
+
   //create new li element
   var li = document.createElement("li");
 
